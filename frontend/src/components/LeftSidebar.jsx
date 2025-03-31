@@ -21,7 +21,7 @@ const LeftSidebar = () => {
 
     const logoutHandler = async () => {
         try {
-            const res = await axios.get('https://instaclone-1-f13f.onrender.com/api/v1/user/logout', { withCredentials: true });
+            const res = await axios.get('https://instaclone-hb8c.onrender.com/api/v1/user/logout', { withCredentials: true });
             if (res.data.success) {
                 dispatch(setAuthUser(null));
                 dispatch(setSelectedPost(null));
@@ -118,4 +118,4 @@ const LeftSidebar = () => {
     )
 }
 
-export default LeftSidebar
+export default LeftSidebar 
